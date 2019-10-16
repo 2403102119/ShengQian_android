@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.lx.whsq.liactivity.EvaluateActivity">
+    <LinearLayout
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="全部"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#F32009"
+            android:background="@drawable/biankuang10"
+            android:layout_weight="0.5"
+            android:layout_width="60dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:text="好评"
+            android:layout_marginLeft="35dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:background="@drawable/biankuang"
+            android:layout_weight="0.5"
+            android:layout_width="60dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:text="中评"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/biankuang"
+            android:layout_weight="0.5"
+            android:layout_width="60dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:text="差评"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/biankuang"
+            android:layout_weight="0.5"
+            android:layout_width="60dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+    <View
+        android:background="#F6F6F6"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

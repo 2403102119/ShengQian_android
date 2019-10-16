@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lx.whsq.liactivity.Voucher_centerActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#F01E1E"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="192dp">
+        <TextView
+            android:text="默认号码"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:text="18836452123"
+                android:background="@null"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@drawable/perch"
+                android:layout_width="16dp"
+                android:layout_height="18dp" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/biankuang"
+        android:layout_width="match_parent"
+        android:layout_height="206dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/biankuang15"
+                    android:layout_width="81dp"
+                    android:layout_height="51dp">
+                    <TextView
+                        android:text="10元"
+                        android:textSize="15sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="售价9.99元"
+                        android:textSize="11sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:text="0.1铜板"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/biankuang15"
+                    android:layout_width="81dp"
+                    android:layout_height="51dp">
+                    <TextView
+                        android:text="10元"
+                        android:textSize="15sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="售价9.99元"
+                        android:textSize="11sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:text="0.1铜板"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/biankuang15"
+                    android:layout_width="81dp"
+                    android:layout_height="51dp">
+                    <TextView
+                        android:text="10元"
+                        android:textSize="15sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="售价9.99元"
+                        android:textSize="11sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:text="0.1铜板"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/biankuang15"
+                    android:layout_width="81dp"
+                    android:layout_height="51dp">
+                    <TextView
+                        android:text="10元"
+                        android:textSize="15sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="售价9.99元"
+                        android:textSize="11sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:text="0.1铜板"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/biankuang15"
+                    android:layout_width="81dp"
+                    android:layout_height="51dp">
+                    <TextView
+                        android:text="10元"
+                        android:textSize="15sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="售价9.99元"
+                        android:textSize="11sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:text="0.1铜板"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/biankuang15"
+                    android:layout_width="81dp"
+                    android:layout_height="51dp">
+                    <TextView
+                        android:text="10元"
+                        android:textSize="15sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="售价9.99元"
+                        android:textSize="11sp"
+                        android:textColor="#ED2828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:text="0.1铜板"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

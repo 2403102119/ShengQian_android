@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.lx.whsq.liactivity.SynopsisActivity">
+   <TextView
+       android:layout_gravity="center_horizontal"
+       android:textColor="@color/red_them"
+       android:textSize="14sp"
+       android:text="审核失败，您上传的图片不清晰，请再次上传"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+    <TextView
+        android:text="店铺简介"
+        android:layout_marginTop="18dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="这是一个店铺"
+        android:textSize="14sp"
+        android:textCursorDrawable="@drawable/my_cursor2"
+        android:layout_marginTop="12dp"
+        android:gravity="top"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/biankuang12"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+    <ImageView
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/shangchuanzhaopianl"
+        android:layout_width="56dp"
+        android:layout_height="56dp" />
+    <TextView
+        android:id="@+id/tv_login"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/biankuang3"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+</LinearLayout>

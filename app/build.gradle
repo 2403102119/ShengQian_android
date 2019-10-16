@@ -1,0 +1,153 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.lx.whsq"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true //65536
+    }
+
+
+    /*关于签名*/
+    signingConfigs {
+        release {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('shengqian.jks')
+            storePassword '123456'
+        }
+        debug {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('shengqian.jks')
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        /* release {
+             minifyEnabled false
+             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+         }*/
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+    //网络请求
+    implementation project(':okhttputils')
+    implementation project(':beecloud')
+    implementation project(':dialog')
+    implementation project(':flowlayout-lib')
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    //65536
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //下拉刷新
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+
+    //俊哥开始
+    implementation 'com.lxj:xpopup:1.8.8'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+    //俊哥完
+
+    //自定义对话框
+
+    //implementation 'com.github.hss01248:DialogUtil:2.0.2'
+
+    //权限管理
+    annotationProcessor 'com.zhy:mpermission-compiler:1.0.0'
+    implementation 'com.zhy:mpermission-api:1.0.0'
+
+    //圆形头像
+    implementation 'com.makeramen:roundedimageview:2.2.1'
+
+    //加载图片
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //图片选择
+    implementation 'com.github.lovetuzitong:MultiImageSelector:1.2'
+
+    //图片压缩
+    implementation 'top.zibin:Luban:1.1.8'
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.7'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+
+    /*图片轮播3*/
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    //eventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //自定义方框验证码输入框
+    implementation 'com.jyn.verificationcodeview:verificationcodeview:1.0.0'
+
+    //首页轮播图
+    implementation 'cn.bingoogolapple:bga-banner:2.2.4@aar'
+    //倒计时
+    implementation 'com.github.iwgang:countdownview:2.1.6'
+    //地图
+    //implementation files('libs/AMap2DMap_5.2.0_AMapSearch_6.1.0_AMapLocation_4.2.0_20180809.jar')
+    //星星222
+    implementation 'me.zhanghai.android.materialratingbar:library:1.3.1'
+    //星星   暂时不用了
+    implementation 'com.iarcuschin:simpleratingbar:0.1.5'
+    //城市选择
+    implementation 'com.contrarywind:Android-PickerView:4.1.7'
+    //饺子视频播放器
+    compile 'cn.jzvd:jiaozivideoplayer:6.2.12'
+    //
+    compile 'com.github.addappcn:android-pickers:1.0.3'
+    //地图
+    implementation files('libs/AMap_Location_V4.0.1_20180426.jar')
+
+
+
+
+
+}

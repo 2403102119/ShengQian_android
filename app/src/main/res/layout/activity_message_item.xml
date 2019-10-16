@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.lx.whsq.liactivity.Message_itemActivity">
+    <TextView
+        android:text="我惠省钱教你省钱！"
+        android:textColor="@color/black"
+        android:layout_marginTop="17dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="2019-09-24"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginTop="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="#C1C1C1"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:text="我惠省钱教你省钱！"
+        android:textColor="@color/black"
+        android:layout_marginTop="17dp"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Hi，来自天南地北的你这是我惠省钱的教程这是我惠省钱的教程这
+是我惠省钱的教程这是我惠省钱的教程这是我惠省钱的教程这是我
+惠省钱的教程这是我惠省钱的教程这是我惠省钱的教程这是我惠省
+钱的教程这是我惠省钱的教程。"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="5dp"
+        android:textSize="12sp"
+        android:layout_marginTop="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

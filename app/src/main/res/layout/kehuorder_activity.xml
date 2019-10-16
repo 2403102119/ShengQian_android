@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_title"></include>
+
+    <View style="@style/hengLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="云店订单"
+                android:textColor="#f00"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="淘客订单"
+                android:textColor="#f00"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="拼团订单"
+                android:textColor="#f00"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="商圈"
+                android:textColor="#f00"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="其他"
+                android:textColor="#f00"
+                android:textSize="@dimen/sp_14" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/hengLine"
+        android:layout_marginTop="@dimen/dp_5" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:tabIndicatorColor="@color/mainColor"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/mainColor"
+            app:tabTextColor="#666" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

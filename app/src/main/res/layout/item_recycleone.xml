@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/perch"
+            android:layout_width="41dp"
+            android:layout_height="41dp" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+           <TextView
+               android:text="用户昵称"
+               android:textColor="#333333"
+               android:textSize="12sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="0.5"/>
+        </LinearLayout>
+        <TextView
+            android:text="2019-07-01"
+            android:textColor="#999999"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        android:text="已经收到，配送很快，价格也很实惠，味道纯正，价格合理,非常喜欢。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

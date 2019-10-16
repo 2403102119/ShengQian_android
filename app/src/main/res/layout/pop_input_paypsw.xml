@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rect_white_top_5dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"
+        android:text="输入支付密码"
+        android:textColor="#ff666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="￥ *.00"
+        android:textColor="#FF4635"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvErrorHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="密码错误请重试"
+        android:textColor="#ffff3f3f"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvAllCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_launcher_background"
+        android:text="剩余C币（0个）"
+        android:textColor="#ff666666"
+        android:textSize="12sp" />
+
+
+    <com.lx.whsq.view.PayPsdInputViewMi
+        android:id="@+id/inputEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:inputType="numberPassword"
+        android:maxLength="6" />
+
+    <TextView
+        android:id="@+id/tvFindbackPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="找回密码"
+        android:textColor="#ff998cf5"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

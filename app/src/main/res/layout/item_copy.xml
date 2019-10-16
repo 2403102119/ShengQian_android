@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_copy"
+    android:orientation="vertical"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="33dp">
+        <ImageView
+            android:src="@drawable/perch"
+            android:layout_width="33dp"
+            android:layout_height="33dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="11dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="小灰灰"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="09-22  10:20"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/biankuang10"
+            android:layout_gravity="center"
+            android:layout_width="71dp"
+            android:layout_height="21dp">
+            <ImageView
+                android:src="@mipmap/fenxiangl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:text="17.5铜板"
+        android:textSize="10sp"
+        android:textColor="#F03A17"
+        android:gravity="center"
+        android:background="@drawable/biankuang11"
+        android:layout_marginTop="10dp"
+        android:layout_width="94dp"
+        android:layout_height="21dp" />
+    <TextView
+        android:text="努力不是为了感动谁，
+        而是有能力跳出讨厌的圈子，
+        并拥有选择的权利，
+        用自己喜欢的方式过一生。"
+        android:textSize="13sp"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra = "5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

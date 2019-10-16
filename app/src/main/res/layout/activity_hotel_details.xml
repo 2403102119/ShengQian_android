@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.lx.whsq.liactivity.Hotel_detailsActivity">
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <com.youth.banner.Banner
+              android:id="@+id/banner"
+              android:layout_width="match_parent"
+              android:layout_height="210dp">
+          </com.youth.banner.Banner>
+          <LinearLayout
+              android:layout_marginTop="10dp"
+              android:orientation="horizontal"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:text="中州商务酒店"
+                  android:textSize="16sp"
+                  android:textColor="#333333"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:text="豪华型"
+                  android:textSize="12sp"
+                  android:layout_marginLeft="10dp"
+                  android:textColor="#333333"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:text="4.5分"
+                  android:textColor="#DE2910"
+                  android:textSize="14sp"
+                  android:gravity="right"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_marginTop="10dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:text="地址"
+                  android:textSize="14sp"
+                  android:textColor="#333333"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:layout_marginLeft="11dp"
+                  android:textSize="11sp"
+                  android:textColor="#666666"
+                  android:text="河南省郑州市金水区紫荆山/曼哈顿商业区 | 中州大道与郑淀路交叉口西北角建业广场D座一楼。郑淀路交叉口西北角建业广场D座一楼。"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content" />
+              <View
+                  android:layout_marginLeft="15dp"
+                  android:background="#EEEEEE"
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"/>
+              <ImageView
+                  android:layout_marginLeft="17dp"
+                  android:layout_gravity="center"
+                  android:layout_width="24dp"
+                  android:layout_height="24dp" />
+
+          </LinearLayout>
+          <android.support.design.widget.TabLayout
+              android:id="@+id/tablayout"
+              android:layout_width="match_parent"
+              android:layout_height="34dp"
+              android:layout_marginTop="14dp"
+              android:background="#fff"
+              app:tabIndicatorColor="#E61B1B"
+              app:tabIndicatorFullWidth="false"
+              app:tabIndicatorHeight="2dp"
+              app:tabMode="fixed"
+              app:tabSelectedTextColor="#E61B1B"
+              app:tabTextAppearance="@style/TabText"
+              app:tabTextColor="#333333" />
+          <android.support.v4.view.ViewPager
+              android:id="@+id/tab_viewpager"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:background="@android:color/white" />
+      </LinearLayout>
+    <ImageView
+        android:id="@+id/im_return"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/perch"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+</RelativeLayout>

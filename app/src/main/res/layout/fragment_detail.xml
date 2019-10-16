@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:background="#DE2910"
+                android:layout_width="3dp"
+                android:layout_height="9dp"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:text="设施服务"
+                android:textSize="16sp"
+                android:textColor="#DE2910"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:text="酒店设施"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:background="#DE2910"
+                android:layout_width="3dp"
+                android:layout_height="9dp"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:text="酒店介绍"
+                android:textSize="16sp"
+                android:textColor="#DE2910"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginTop="16dp"
+                android:text="酒店电话："
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:layout_marginTop="16dp"
+                android:text="0371-8962541265、668885412"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="16dp"
+                android:text="开业时间："
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:layout_marginTop="16dp"
+                android:text=" 酒店开业时间2010装修时间2010"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="16dp"
+                android:text="酒店简介  ："
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:text=" 中州商务酒店(郑州商都路店)位于商都与通泰路交叉口，毗邻郑州高铁站7公里。酒店门口公交线路直达，约30分钟，位置优越，郑州高铁站7公里。酒店门口公交四通..."
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="right"
+            android:text="展开"
+            android:textSize="12sp"
+            android:textColor="#DE2910"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:background="#DE2910"
+                android:layout_width="3dp"
+                android:layout_height="9dp"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:text="订房必读"
+                android:textSize="16sp"
+                android:textColor="#DE2910"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:text="入离时间"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:text="入住时间：12：00以后"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="29dp"
+                android:text="离店时间：12：00-14：00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="8dp"
+            android:text="儿童政策"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            android:text="不接受18岁以下客人单独入住"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</ScrollView>

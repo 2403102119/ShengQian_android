@@ -1,0 +1,12 @@
+1.商品详情  Commodity_detailsActivity
+2.全部评论  EvaluateActivity
+3.店铺首页  StoreActivity
+4.宝贝详情  Product_detailActivity
+5.充值中心  Voucher_centerActivity
+6.充值记录  Recharge_recordActivity
+7.信用卡    CreditActivity
+8.极速申请  ApplyActivity
+9.办卡记录  Card_recordsActivity
+10.酒店     HotelActivity
+11.我的订单（酒店）Hotel_orderActivity
+12.订单详情（酒店）Hotel_order_detailsActivity

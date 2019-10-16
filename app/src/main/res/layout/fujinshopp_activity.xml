@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/finishBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/back"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/touxiang5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="111111111111111111111111111111111111111111111111"
+                android:textColor="#111"
+                android:textSize="@dimen/sp_14" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/touxiang5" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/type">
+
+
+            </Spinner>
+
+            <View
+                android:layout_width="5px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_8" />
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:elevation="0dp">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="#fff"
+                app:tabIndicatorColor="@color/mainColor"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/mainColor"
+                app:tabTextAppearance="@style/TabText"
+                app:tabTextColor="#999" />
+        </android.support.design.widget.AppBarLayout>
+
+
+    </LinearLayout>
+
+
+    <View style="@style/hengLine" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tabViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

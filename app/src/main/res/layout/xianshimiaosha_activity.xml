@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_title"></include>
+    <View style="@style/hengLine" />
+
+    <!--此处是横向的时间段-->
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--此处是秒杀的商品-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <include layout="@layout/item_miaoshashop"/>
+            <include layout="@layout/item_miaoshashop"/>
+            <include layout="@layout/item_miaoshashop"/>
+            <include layout="@layout/item_miaoshashop"/>
+            <include layout="@layout/item_miaoshashop"/>
+            <include layout="@layout/item_miaoshashop"/>
+            <include layout="@layout/item_miaoshashop"/>
+            <include layout="@layout/item_miaoshashop"/>
+            <include layout="@layout/item_miaoshashop"/>
+            <include layout="@layout/item_miaoshashop"/>
+            <include layout="@layout/item_miaoshashop"/>
+            <include layout="@layout/item_miaoshashop"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

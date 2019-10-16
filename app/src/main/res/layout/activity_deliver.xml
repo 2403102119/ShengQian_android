@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="15dp"
+    tools:context="com.lx.whsq.liactivity.DeliverActivity">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="物流类型："
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/biankuang"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_height="29dp">
+            <TextView
+                android:hint="请选择物流类型"
+                android:textSize="13sp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:textColorHint="#999999"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:src="@drawable/perch"
+                android:layout_width="10dp"
+                android:layout_height="6dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="物流单号："
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:background="@drawable/biankuang"
+            android:hint="请输入物流单号"
+            android:textSize="13sp"
+            android:layout_marginLeft="19dp"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:textColorHint="#999999"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="29dp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_login"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@drawable/biankuang3"
+        android:layout_marginTop="96dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+</LinearLayout>

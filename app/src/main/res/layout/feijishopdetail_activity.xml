@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_title"></include>
+
+    <View style="@style/hengLine" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_140"
+        android:background="@drawable/button_shape_while"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:gravity="center"
+            android:text="2019.02.24 周二 成都--北京"
+            android:textColor="#333"
+            android:textSize="@dimen/sp_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:gravity="center"
+                    android:text="07:32"
+                    android:textColor="#333"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="双流T3"
+                    android:textColor="#666"
+                    android:textSize="@dimen/sp_13" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="约2小时20分"
+                    android:textColor="#333"
+                    android:textSize="@dimen/dp_10" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shikebiaopiao" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="约3小时17分钟"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:gravity="center"
+                    android:text="07:32"
+                    android:textColor="#333"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="萧山T3"
+                    android:textColor="#666"
+                    android:textSize="@dimen/sp_13" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:gravity="center"
+            android:text="川航8633 | 空客A380(中型机)|有餐食"
+            android:textColor="#444"
+            android:textSize="@dimen/sp_11" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d8d8d8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/item_feijixibie" />
+
+            <include layout="@layout/item_feijixibie" />
+
+            <include layout="@layout/item_feijixibie" />
+
+            <include layout="@layout/item_feijixibie" />
+
+            <include layout="@layout/item_feijixibie" />
+
+            <include layout="@layout/item_feijixibie" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

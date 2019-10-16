@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".liactivity.NationwideActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="fitXY"
+            android:background="@mipmap/quanguol"
+            android:layout_width="match_parent"
+            android:layout_height="116dp" />
+        <LinearLayout
+            android:id="@+id/ll_select_address"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60">
+           <TextView
+               android:text="完善收货区域"
+               android:textSize="14sp"
+               android:textColor="@color/black"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_site"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:layout_marginLeft="26dp"
+                android:hint="请选择地址"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/xialal"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:text="申请全国厂家总店"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="申请全国厂家总店 (分期)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="11dp"
+            android:background="#449E9E9E"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="云店铺销售数据统计系统服务费"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="27dp"
+                android:textSize="14sp"
+                android:text="¥ 120000.00"
+                android:textColor="@color/red"
+                android:gravity="center_vertical|right"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_marginLeft="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="我已阅读并同意 "
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_agreement"
+                android:text="【全国厂家总店申请协议】"
+                android:textColor="#CD2B1E"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="#449E9E9E"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="49dp">
+            <TextView
+                android:text="实付："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="¥ 120000.00"
+                android:textColor="#E0FF6100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_submit"
+                android:text="提交申请"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/biankuang3"
+                android:layout_width="128dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

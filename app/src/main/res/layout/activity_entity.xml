@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.lx.whsq.liactivity.EntityActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="175dp">
+           <ImageView
+               android:src="@mipmap/ic_launcher"
+               android:layout_width="96dp"
+               android:layout_height="96dp" />
+           <TextView
+               android:text="设置你的店铺LOGO"
+               android:textColor="#111111"
+               android:textSize="13sp"
+               android:layout_marginTop="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="27dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="商户名称"
+                android:textSize="14sp"
+                android:layout_marginLeft="17sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="请输入商户名称"
+                android:textSize="14sp"
+                android:textColor="#111111"
+                android:layout_marginLeft="50dp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="16dp"
+            android:background="#CCCCCC"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="主营项目"
+                android:textSize="14sp"
+                android:layout_marginLeft="17sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:text="化妆品"
+                android:textSize="14sp"
+                android:textColor="#111111"
+                android:layout_marginLeft="50dp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="16dp"
+            android:background="#F8F8F8"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="联系人"
+                android:textSize="14sp"
+                android:layout_marginLeft="17sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="您的姓名"
+                android:textSize="14sp"
+                android:textColor="#111111"
+                android:layout_marginLeft="64dp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="16dp"
+            android:background="#CCCCCC"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="手机号"
+                android:textSize="14sp"
+                android:layout_marginLeft="17sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="您的手机号"
+                android:textSize="14sp"
+                android:textColor="#111111"
+                android:layout_marginLeft="64dp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="16dp"
+            android:background="#F8F8F8"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="厂家签约人"
+                android:textSize="14sp"
+                android:layout_marginLeft="17sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="厂家签约人的云网账号（手机号）"
+                android:textSize="14sp"
+                android:textColor="#111111"
+                android:layout_marginLeft="36dp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="16dp"
+            android:background="#F8F8F8"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="172dp">
+            <TextView
+                android:text="营业执照"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp" />
+                    <TextView
+                        android:layout_marginTop="9dp"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:text="上传营业执照"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="16dp"
+            android:background="#F8F8F8"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="172dp">
+            <TextView
+                android:text="法人身份"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp" />
+                    <TextView
+                        android:layout_marginTop="9dp"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:text="身份证正面"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp" />
+                    <TextView
+                        android:layout_marginTop="9dp"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:text="身份证反面"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp" />
+                    <TextView
+                        android:layout_marginTop="9dp"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:text="手持身份证"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="16dp"
+            android:background="#F8F8F8"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="172dp">
+            <TextView
+                android:text="其他证书"
+                android:textColor="#666666"
+                android:textSize="16sp"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp" />
+                    <TextView
+                        android:layout_marginTop="9dp"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:text="上传证书"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_marginLeft="13dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="我已阅读并同意 "
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="《我惠云店商家入驻协议》"
+                android:textColor="#CD2B1E"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="39dp"
+            android:layout_marginBottom="40dp"
+            android:text="立即申请入驻"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:background="@drawable/biankuang3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+    </LinearLayout>
+</ScrollView>

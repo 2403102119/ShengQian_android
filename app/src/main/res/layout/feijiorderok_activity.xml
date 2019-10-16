@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f00"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_50"
+                    android:gravity="center_vertical"
+                    android:text="郑州新郑机场"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:src="@drawable/qucheng_xiao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_50"
+                    android:gravity="center_vertical"
+                    android:text="北京大兴国际机场"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="center"
+                android:text="2019-05-12 周二"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_13"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/finishBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/back" />
+
+
+    </FrameLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@drawable/button_shape_while"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/sp_25"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:background="@drawable/buttonbj40"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:paddingRight="@dimen/dp_20"
+                        android:text="单程"
+                        android:textColor="#F03A17"
+                        android:textSize="@dimen/sp_11" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_30"
+                            android:gravity="center_vertical"
+                            android:text="2019/02/24  周二  07：20  经济舱"
+                            android:textColor="#333"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_30"
+                            android:gravity="center_vertical"
+                            android:text="双流T3-首都机场T3"
+                            android:textColor="#666"
+                            android:textSize="@dimen/sp_12" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_30"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="¥680"
+                            android:textColor="#DE2910"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_30"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="成人票"
+                            android:textColor="#333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_30"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="机建燃油￥50"
+                            android:textColor="#333"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#d8d8d8" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_25"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="提供等额行程单"
+                            android:textColor="#333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_25"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="机建燃油￥50"
+                            android:textColor="#333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_25"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="成人票"
+                            android:textColor="#333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_25"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="机建燃油￥50"
+                            android:textColor="#333"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10px"
+                    android:background="#d8d8d8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_45">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:gravity="center_vertical"
+                            android:text="乘机人"
+                            android:textColor="#333"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/sp_10"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:background="@drawable/button_shapea"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp_5"
+                            android:paddingRight="@dimen/dp_5"
+                            android:text="选择乘机人"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/sp_12" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#d8d8d8" />
+
+                    <!-- <include layout="@layout/item_huochepiao_pop" />
+
+                     <include layout="@layout/item_huochepiao_pop" />
+
+                     <include layout="@layout/item_huochepiao_pop" />-->
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10px"
+                    android:background="#d8d8d8" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_35"
+                        android:orientation="horizontal"
+                        android:weightSum="7">
+
+                        <TextView
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:text="联系人"
+                            android:textColor="#333"
+                            android:textSize="@dimen/sp_14" />
+
+                        <EditText
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:background="@null"
+                            android:hint="请输入联系人姓名"
+                            android:textColor="#333"
+                            android:textSize="@dimen/sp_14" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#d8d8d8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_35"
+                        android:orientation="horizontal"
+                        android:weightSum="7">
+
+                        <TextView
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:text="联系电话"
+                            android:textColor="#333"
+                            android:textSize="@dimen/sp_14" />
+
+                        <EditText
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:background="@null"
+                            android:hint="请输入联系人手机号"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:textColor="#333"
+                            android:textSize="@dimen/sp_14" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10px"
+                    android:background="#d8d8d8" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_25"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_25"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:gravity="center_vertical"
+                            android:text="尊享航意险" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:src="@drawable/jingshipiao" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_35">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:gravity="center_vertical"
+                            android:text="飞行有保障，最高赔付260万/份"
+                            android:textColor="#A5A5A5"
+                            android:textSize="@dimen/sp_12" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="¥ 30"
+                                android:textColor="#DE2910"
+                                android:textSize="@dimen/sp_14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="元/份"
+                                android:textColor="#333"
+                                android:textSize="@dimen/sp_14" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:layout_marginTop="@dimen/dp_0"
+                                android:button="@drawable/cb_xieyi"
+                                android:gravity="center"
+                                android:text="" />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10px"
+                    android:background="#d8d8d8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_80"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="备注"
+                        android:textColor="#333"
+                        android:textSize="@dimen/sp_14" />
+
+                    <EditText
+                        android:id="@+id/editFeed"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="top"
+                        android:hint="  请填写发票抬头(选填)"
+                        android:maxEms="10"
+                        android:minEms="10"
+                        android:textColor="#999"
+                        android:textCursorDrawable="@drawable/my_cursor"
+                        android:textSize="@dimen/sp_11" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--底部订单总价-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_alignParentBottom="true"
+                android:background="#fff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_30"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="¥ 8033333333333"
+                                android:textColor="#DE2910"
+                                android:textSize="@dimen/sp_15" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp_3"
+                                android:gravity="center_vertical"
+                                android:text="(共2人)"
+                                android:textColor="#666"
+                                android:textSize="@dimen/sp_14" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_3"
+                            android:gravity="center_vertical"
+                            android:text="订单总价 888888888888888888"
+                            android:textColor="#666"
+                            android:textSize="@dimen/sp_14" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#DE2910"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_25"
+                        android:paddingRight="@dimen/dp_25"
+                        android:text="去付款"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

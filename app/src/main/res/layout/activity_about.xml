@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F5F5"
+    tools:context="com.lx.whsq.liactivity.AboutActivity">
+ <ImageView
+     android:src="@drawable/touxiang5"
+     android:layout_marginTop="33dp"
+     android:layout_gravity="center_horizontal"
+     android:layout_width="75dp"
+     android:layout_height="75dp" />
+    <TextView
+        android:text="v1.0.1"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="51dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+    <TextView
+        android:text="用户协议"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/fanhui"
+            android:layout_width="8dp"
+            android:layout_height="14dp" />
+    </LinearLayout>
+</LinearLayout>

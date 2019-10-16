@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="#fff"
+        android:orientation="vertical">
+
+
+        <!--
+
+
+            app:riv_corner_radius="20dip"
+        -->
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_170"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiang5"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius_top_left="@dimen/dp_5"
+            app:riv_corner_radius_top_right="@dimen/dp_5"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_3"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_weight="7"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="水果名称水果名称水果名称水果名称水果名称水果名称水果名称水果名称水果名称水果名称水果名称水果名称水果名称水果名称"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_14" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/MaterialRatingBar"
+                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="-3dp"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginRight="-3dp"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:stepSize="0.01"
+                app:mrb_progressTint="@color/mainColor" />
+
+
+            <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:srb_drawBorderEnabled="false"
+                app:srb_fillColor="#f00"
+                app:srb_numberOfStars="5"
+                app:srb_rating="1"
+                app:srb_starBackgroundColor="#d8d8d8"
+                app:srb_starSize="20dp"
+                app:srb_stepSize="1" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="4.00"
+                android:textColor="#FF7500"
+                android:textSize="@dimen/sp_12" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="¥"
+                android:textColor="#F03A17"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="999"
+                android:textColor="#F03A17"
+                android:textSize="@dimen/sp_15" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/spacing_tinyer"
+                    android:paddingRight="@dimen/spacing_tinyer"
+                    android:text="¥ 159"
+                    android:textColor="#AAAAAA"
+                    android:textSize="@dimen/sp_10" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_alignLeft="@+id/tv6"
+                    android:layout_alignRight="@+id/tv6"
+                    android:layout_centerVertical="true"
+                    android:background="@color/deep_transparent"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="已售:2000"
+            android:textColor="#AAAAAA"
+            android:textSize="@dimen/sp_11"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/button_shape0"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:text="5元券"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_11"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_0"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/buttonbj40"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:text="17铜板"
+                android:textColor="#F03A17"
+                android:textSize="@dimen/sp_11" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

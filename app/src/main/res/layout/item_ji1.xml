@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!--
+        android:background="@drawable/selector_item_selected"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+
+        https://blog.csdn.net/MoriatyHe/article/details/51067721
+
+        -->
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical|center"
+        android:singleLine="true"
+        android:text="手机"
+        android:textColor="@drawable/text_color"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d8d8d8" />
+</LinearLayout>

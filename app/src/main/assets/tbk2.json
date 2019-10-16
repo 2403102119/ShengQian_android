@@ -1,0 +1,99 @@
+{
+  "arr": [
+    {
+      "makes": [
+        {
+          "modes": [
+            {
+              "attributes": [
+                "6+64GB",
+                "6+128GB",
+                "6+256GB"
+              ],
+              "name": "小米CC"
+            },
+            {
+              "attributes": [
+                "4+64GB",
+                "4+128GB"
+              ],
+              "name": "小米MAX3"
+            }
+          ],
+          "name": "小米"
+        },
+        {
+          "modes": [
+            {
+              "attributes": [
+                "6+64GB",
+                "6+128GB"
+              ],
+              "name": "nova 3"
+            },
+            {
+              "attributes": [
+                "4+64GB",
+                "6+128GB"
+              ],
+              "name": "mate 10"
+            }
+          ],
+          "name": "华为"
+        }
+      ],
+      "name": "手机"
+    },
+    {
+      "makes": [
+        {
+          "modes": [
+            {
+              "attributes": [
+                "AF-S 140",
+                "AF-S 200",
+                "50f/1.8G",
+                "DX 35f /1.8G",
+                "DX 18-300"
+              ],
+              "name": "D7200"
+            },
+            {
+              "attributes": [
+                "50mm/1.8G",
+                "18-105f VR",
+                "50mm f /.8D",
+                "24-120mm VR"
+              ],
+              "name": "D7500"
+            }
+          ],
+          "name": "尼康"
+        },
+        {
+          "modes": [
+            {
+              "attributes": [
+                "XF5 32G",
+                "XF 64G",
+                "XF 32G ",
+                "X 64G"
+              ],
+              "name": "旗舰X-T2"
+            },
+            {
+              "attributes": [
+                "XF3m F2.0",
+                "XFm F2.8R",
+                "XF F1.2R"
+              ],
+              "name": "x-Pro2"
+            }
+          ],
+          "name": "富士"
+        }
+      ],
+      "name": "相机"
+    }
+  ]
+}

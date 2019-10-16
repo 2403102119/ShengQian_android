@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_140"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_120"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:scaleType="fitCenter"
+            android:src="@drawable/touxiang5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="111111111111111111111111111111111111111111111111111111111111111"
+                android:textColor="#111"
+                android:textSize="@dimen/sp_14" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:max="300"
+                android:progress="50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.lx.whsq.view.CustomProgressBar
+                android:visibility="gone"
+                android:id="@+id/CustomProgressBar0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_shape"
+                app:max="0"
+                app:progress="0"
+                app:progressColor="#FFB60C"
+                app:progressDesc=""
+                app:progressRadius="8dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/buttonbj40"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:text="17铜板"
+                android:textColor="#F03A17"
+                android:textSize="@dimen/sp_11" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="¥ 30.00"
+                        android:textColor="@color/mainColor"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:gravity="center_vertical"
+                        android:text="¥ 30.00"
+                        android:textColor="#AAAAAA"
+                        android:textSize="@dimen/sp_10" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_shapea"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="马上抢"
+                    android:textColor="#fff" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

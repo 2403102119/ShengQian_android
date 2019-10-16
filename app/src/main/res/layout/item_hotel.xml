@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:padding="15dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/perch"
+        android:layout_width="105dp"
+        android:layout_height="105dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="中州商务酒店"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="豪华型"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:text="17.5积分"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/red_them"
+            android:background="@drawable/biankuang11"
+            android:layout_width="60dp"
+            android:layout_height="16dp" />
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="4.5分"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="300条点评"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="￥80起"
+                android:textColor="#DE2910"
+                android:textSize="14sp"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="@dimen/dp_12"
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:text="距您300米丨近东建材居然之家"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

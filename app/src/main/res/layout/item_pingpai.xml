@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+
+            <ImageView
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:scaleType="fitXY"
+                android:src="@drawable/touxiang5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="查看更多 >"
+
+                />
+
+
+        </RelativeLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiang5"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius_top_left="@dimen/dp_5"
+            app:riv_corner_radius_top_right="@dimen/dp_5"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+        <!--品牌闪购的商品列表-->
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

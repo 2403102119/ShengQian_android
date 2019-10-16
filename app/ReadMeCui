@@ -1,0 +1,53 @@
+说明
+0. 我惠页面统一的标题页面  WoHuiAllActivity
+1. 我的订单 MyOrderActivity  OrderFragment1  AllOrderAdapter  item_allorder
+2. 订单下商品列表  AllOrderAdapter   item_shop_order
+3. 客户订单 KeHuOrderActivity  KeHuOrderAdapter
+4. 订单详情--商品和店铺列表 OrderDetailActivity  OrderInShopAdapter  item_detail_inorder
+5. 取消订单 取消原因 CancelOrderActivity CancelAdapter item_cancel
+6. Top100页面 Home1Top100Fragment top100  Top100Adapter   item_top100
+7. 限时秒杀 XianShiMiaoShaActivity 顶部的时间段 MiaoShaTimeAdapter  item_time
+8. 限时秒杀 XianShiMiaoShaActivity 底部的商品 MiaoShaShopAdapter item_miaoshashop
+9. 首页第3个往后的Tab页面,所有的是通用的  Index3AllFragment  MultiAdapter  item_three  上部分列表
+10. 首页第3个往后的Tab页面,所有的是通用的  Index3AllFragment  TwoShopAdapter  下部分商品
+11. 品牌闪购  PinPaiShanGouActivity PinPaiShanGouAdapter   item_pingpai  下面的商品  PinPaiShanGouShopAdapter  item_shangoushop
+12. 云店下面的精选  YunTab1Fragment  yuntab1fragment
+13. 扶贫专区省市县 FuPinActivity  省份 FuPinItem1Adapter   item_ji1     FuPinItem23Adapter   item_ji23
+14. 抖券 DouQuanActivity  DouQuanAdapter   item_douquan
+15. 我的订单 商圈订单 MyOrderActivity OrderFragment1  AllOrderAdapter  item_shangquan
+16. 附近商家 优惠券列表  FujinShoppActivity  FujinShopFragment1    item_shop_youhuiquan
+17. 附近商家----进入的详情页面  FujinShopDetailActivity   FujinShopDetailAdapter  item_fujinshopdetail_youhuiquan
+18. 05.03 周二 车次信息页面,显示车票列表信息   CheCiInfoActivity  CheCiInfoAdapter  item_checi
+19. 乘车联系人列表  此处是已经添加进来联系人   HuoChePiaoSelectPopActivity  HuoChePiaoSelectPopAdapter(这个是选择联系人和删除联系人)   item_huochepiao_pop
+20. 乘车联系人列表  弹出来联系人列表  item_pop_layout   PopAdapter item_pop_rel (选择乘车的联系人)
+21. 火车票列表的item   TrainListAdapter  item_trainlist   item_xibie (火车席别)
+22. 飞机票 我的订单列表 和火车票我的订单页面通用   AirOrderListActivity  AirOrderListAdapter  item_air_order
+23. 飞机票商品列表  FeijiShopListActivity FeijiShopListAdapter  item_feiji_shop
+24. 05.03 周二 飞机列表点击进来的页面   FeijiShopDetailActivity  下面的飞机商品列表  FeijiShaopXiBieAdapter    item_feijixibie
+
+
+
+
+
+
+
+//----------------------特殊的布局------------------
+1.选择证件类型 item_sfz_type  火车票飞机票酒店
+
+首页精选       Home1FragmentTab1
+首页Top100     Home1Top100Fragment
+首页其他        Home1FragmentTab3
+
+--------------
+云店精选     YunTab1Fragment
+云店其他     Home1FragmentTab3   云店没有排序
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lx.whsq">
+
+
+    <!--极光推送-->
+    <!--极光推送-->
+    <!-- Required -->
+    <permission
+        android:name="com.lx.whsq.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.lx.whsq.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!--极光推送-->
+
+    <!--极光推送-->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- <uses-permission android:name="android.permission.READ_CALENDAR" />
+     <uses-permission android:name="android.permission.WRITE_CALENDAR" />-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+
+
+    <application
+        android:name="com.lx.whsq.common.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--处理选择图片文件崩溃-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.lx.whsq.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+
+
+        <activity android:name="com.lx.whsq.common.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".cuiactivity.SettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /><!--设置-->
+        <activity
+            android:name="com.lx.whsq.cuiactivity.MyOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--我的订单-->
+
+        <activity
+            android:name="com.lx.whsq.kehuorder.KeHuOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--客户订单-->
+
+
+        <activity
+            android:name="com.lx.whsq.cuiactivity.ShenQingTuiMoneyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--申请退款-->
+
+        <activity
+            android:name="com.lx.whsq.cuiactivity.TuiKuanDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--退款订单详情-->
+
+        <activity
+            android:name="com.lx.whsq.cuiactivity.OrderDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+        </activity><!--订单详情-->
+
+        <activity
+            android:name="com.lx.whsq.cuiactivity.CancelOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+        </activity><!--取消原因,取消订单-->
+
+        <activity
+            android:name="com.lx.whsq.cuiactivity.PaySuccessActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+        </activity><!--支付成功-->
+
+
+        <activity
+            android:name="com.lx.whsq.jiudian.SelectedDayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--酒店选择日期-->
+
+        <activity
+            android:name="com.lx.whsq.home1.WoHuiAllActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--我惠所有统用的页面-->
+
+        <activity
+            android:name="com.lx.whsq.cuiactivity.FenLeiShopActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--所有分类页面-->
+        <activity
+            android:name="com.lx.whsq.cuiactivity.YuanQuActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--9.9 6.9 3.9 分区-->
+        <activity
+            android:name="com.lx.whsq.home1.SearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--搜索页面-->
+        <activity
+            android:name="com.lx.whsq.home1.SearchCityActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--搜索城市-->
+        <activity
+            android:name="com.lx.whsq.home1.FenLeiActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--选择分类-->
+        <activity
+            android:name="com.lx.whsq.home1.XianShiMiaoShaActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--限时秒杀-->
+        <activity
+            android:name="com.lx.whsq.cuiactivity.OrderOKActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity><!--确认订单-->
+        <activity
+            android:name="com.lx.whsq.cuiactivity.PinPaiShanGouActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--品牌闪购-->
+        <activity
+            android:name="com.lx.whsq.home2.FuPinActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--扶贫专区-->
+        <activity
+            android:name="com.lx.whsq.home2.FuPinXianActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--扶贫产品,带有视频播放-->
+        <activity
+            android:name="com.lx.whsq.home2.LiuYanActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--留言区-->
+        <activity
+            android:name="com.lx.whsq.home2.DianPuDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--店铺详情-->
+        <activity
+            android:name="com.lx.whsq.home2.ShangQuanOrderDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--商圈订单详情-->
+        <activity
+            android:name="com.lx.whsq.home2.FujinShoppActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--附近商家-->
+
+
+        <activity
+            android:name="com.lx.whsq.home1.DouQuanActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--抖券-->
+        <activity
+            android:name="com.lx.whsq.home1.HuoChePiaoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--火车票-->
+        <activity
+            android:name="com.lx.whsq.home1.TrainListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--火车票列表-->
+
+
+        <activity
+            android:name="com.lx.whsq.home1.BianjiChengCheRenActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--编辑乘车人-->
+        <activity
+            android:name="com.lx.whsq.home1.CheCiInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--车次预定信息页面,没有完成-->
+        <activity
+            android:name="com.lx.whsq.home1.HuoChePiaoOrderDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--火车票订单详情-->
+        <activity
+            android:name="com.lx.whsq.home1.HuoChePiaoSelectPopActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--火车票选择联系人-->
+        <activity
+            android:name="com.lx.whsq.feiji.AirOrderListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--机票火车票我的订单通用-->
+        <activity
+            android:name="com.lx.whsq.rili.RiLiActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--横向滑动的日历-->
+        <activity
+            android:name="com.lx.whsq.feiji.FeijiShopListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--飞机票的商品列表-->
+        <activity
+            android:name="com.lx.whsq.feiji.FeijiShopDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--05.03 周二 飞机列表点击进来的页面-->
+        <activity
+            android:name="com.lx.whsq.feiji.FeijiOrderOkActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--飞机票确认订单-->
+        <activity
+            android:name="com.lx.whsq.feiji.FeijiOrderDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity><!--飞机票确认订单-->
+
+
+        <!--界面部分界面部分界面部分界面部分界面部分界面部分界面部分界面部分界面部分界面部分-->
+
+        <!-- 消息 -->
+        <activity
+            android:name=".liactivity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置 -->
+        <activity
+            android:name=".liactivity.SetActivity"
+            android:screenOrientation="portrait" />
+        <!-- 个人信息 -->
+        <activity
+            android:name=".liactivity.PersonalActivity"
+            android:screenOrientation="portrait" />
+        <!-- 申请单品代理 -->
+        <activity
+            android:name=".liactivity.ProductActivity"
+            android:screenOrientation="portrait" />
+        <!-- 支付成功 -->
+        <activity
+            android:name=".liactivity.Payment_successActivity"
+            android:screenOrientation="portrait" />
+        <!-- 申请赠送单品代理 -->
+        <activity
+            android:name=".liactivity.GiftActivity"
+            android:screenOrientation="portrait" />
+        <!-- 申请全国厂家总店 -->
+        <activity
+            android:name=".liactivity.NationwideActivity"
+            android:screenOrientation="portrait" />
+        <!-- 推荐店铺 -->
+        <activity
+            android:name=".liactivity.RecommendActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的小店 -->
+        <activity
+            android:name=".liactivity.ShopActivity"
+            android:screenOrientation="portrait" />
+        <!-- 收藏的店 -->
+        <activity
+            android:name=".liactivity.CollectActivity"
+            android:screenOrientation="portrait" />
+        <!-- 登录 -->
+
+        <activity
+            android:name=".liactivity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <!-- 找回密码 -->
+        <activity
+            android:name=".liactivity.ForgetActivity"
+            android:screenOrientation="portrait" />
+        <!-- 注册账号 -->
+        <activity
+            android:name=".liactivity.RegistActivity"
+            android:screenOrientation="portrait" />
+        <!-- 绑定手机号 -->
+        <activity
+            android:name=".liactivity.BindingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 厂家入驻 -->
+        <activity
+            android:name=".liactivity.VenderActivity"
+            android:screenOrientation="portrait" />
+        <!-- 实体商家入驻 -->
+        <activity
+            android:name=".liactivity.EntityActivity"
+            android:screenOrientation="portrait" />
+        <!-- 店铺管理 -->
+        <activity
+            android:name=".liactivity.ManageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 商品管理 -->
+        <activity
+            android:name=".liactivity.CommodityActivity"
+            android:screenOrientation="portrait" />
+        <!-- 消息详情 -->
+        <activity
+            android:name=".liactivity.Message_itemActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改密码 -->
+        <activity
+            android:name=".liactivity.AmendActivity"
+            android:screenOrientation="portrait" />
+        <!-- 收货地址 -->
+        <activity
+            android:name=".liactivity.ShippingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加地址 -->
+        <activity
+            android:name=".liactivity.Add_addressActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择商铺 -->
+        <activity
+            android:name=".liactivity.SelectActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择支付方式 -->
+        <activity
+            android:name=".liactivity.PayActivity"
+            android:screenOrientation="portrait" />
+        <!-- 邀请好友 -->
+        <activity
+            android:name=".liactivity.InviteActivity"
+            android:screenOrientation="portrait" />
+        <!-- 客户订单 -->
+        <activity
+            android:name=".liactivity.OrderActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单详情(填写订单信息) -->
+        <activity
+            android:name=".liactivity.DeliverActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单详情 -->
+        <activity
+            android:name=".liactivity.Order_detalActivity"
+            android:screenOrientation="portrait" />
+        <!-- 店铺管理 -->
+        <activity
+            android:name=".liactivity.GeneyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 店铺简介 -->
+        <activity
+            android:name=".liactivity.SynopsisActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的钱包 -->
+        <activity
+            android:name=".liactivity.WalletActivity"
+            android:screenOrientation="portrait" />
+        <!-- 账单记录 -->
+        <activity
+            android:name=".liactivity.RecordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 提现 -->
+        <activity
+            android:name=".liactivity.WithdrawActivity"
+            android:screenOrientation="portrait" />
+        <!-- 提现审核 -->
+        <activity
+            android:name=".liactivity.AuditActivity"
+            android:screenOrientation="portrait" />
+        <!-- 优惠券管理 -->
+        <activity
+            android:name=".liactivity.CouponActivity"
+            android:screenOrientation="portrait" />
+        <!-- 编辑优惠券 -->
+        <activity
+            android:name=".liactivity.RedactActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单中心 -->
+        <activity
+            android:name=".liactivity.VerificationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单详情(优惠券) -->
+        <activity
+            android:name=".liactivity.VoucheActivity"
+            android:screenOrientation="portrait" />
+        <!-- 常见问题 -->
+        <activity
+            android:name=".liactivity.FaqActivity"
+            android:screenOrientation="portrait" />
+        <!-- 商品详情 -->
+        <activity
+            android:name=".liactivity.Commodity_detailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用户评价 -->
+        <activity
+            android:name=".liactivity.EvaluateActivity"
+            android:screenOrientation="portrait" />
+        <!-- 店铺详情 -->
+        <activity
+            android:name=".liactivity.StoreActivity"
+            android:screenOrientation="portrait" />
+        <!-- 商品详情(有优惠券) -->
+        <activity
+            android:name=".liactivity.Product_detailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 充值中心 -->
+        <activity
+            android:name=".liactivity.Voucher_centerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 充值记录 -->
+        <activity
+            android:name=".liactivity.Recharge_recordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 办卡记录 -->
+        <activity
+            android:name=".liactivity.CreditActivity"
+            android:screenOrientation="portrait" />
+        <!-- 极速申请 -->
+        <activity
+            android:name=".liactivity.ApplyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 办卡记录 -->
+        <activity
+            android:name=".liactivity.Card_recordsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 购物车 -->
+        <activity
+            android:name=".liactivity.ShoppingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改昵称 -->
+        <activity
+            android:name=".liactivity.Amend_sActivity"
+            android:screenOrientation="portrait" />
+        <!-- 酒店 -->
+        <activity
+            android:name=".liactivity.HotelActivity"
+            android:screenOrientation="portrait" />
+        <!-- 酒店列表 -->
+        <activity
+            android:name=".liactivity.Hotel_listActivity"
+            android:screenOrientation="portrait" />
+        <!-- 酒店订单 -->
+        <activity
+            android:name=".liactivity.Hotel_orderActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关于我们 -->
+        <activity
+            android:name=".liactivity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <!-- 酒店订单详情 -->
+        <activity
+            android:name=".liactivity.Hotel_order_detailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 酒店详情 -->
+        <activity
+            android:name=".liactivity.Hotel_detailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 预定详情 -->
+        <activity
+            android:name=".liactivity.Reservation_detailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择城市 -->
+        <activity android:name=".liactivity.CitySelectActivity" />
+
+
+        <!--界面部分界面部分界面部分界面部分界面部分界面部分界面部分界面部分界面部分界面部分-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_110"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageSel"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@drawable/querendingdan_weixuan" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image2"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/perch"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="5dip"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:text="水果名称水果名称"
+                android:textColor="#111"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_5"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="规格: 20斤一箱"
+                android:textColor="#999"
+                android:textSize="@dimen/sp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="¥ 49.9911111111111111"
+                    android:textColor="@color/mainColor"
+                    android:textSize="@dimen/sp_15" />
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+                    <!--<com.lx.whsq.view.AmountView2-->
+                        <!--android:id="@+id/number"-->
+                        <!--android:layout_width="@dimen/dp_60"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_gravity="right"-->
+                        <!--android:layout_marginRight="15dp"-->
+                        <!--android:visibility="gone"-->
+                        <!--app:currentValue="5"-->
+                        <!--app:maxValue="99"-->
+                        <!--app:minValue="3"-->
+                        <!--app:textSize="10sp" />-->
+
+                    <com.lx.whsq.view.AmountView2
+                        android:id="@+id/AmountView"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:visibility="visible"
+                        app:btnTextSize="14sp"
+                        app:btnWidth="36dp"
+                        app:tvWidth="50dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
